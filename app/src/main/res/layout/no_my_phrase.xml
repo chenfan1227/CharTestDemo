@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/activity_my_phrase_no"
+    android:orientation="vertical">
+
+    <ImageView
+        style="@style/ImageView"
+        android:src="@mipmap/img_no_phrase"/>
+    
+    <TextView
+        style="@style/TextView.Default.MainC6F3"
+        android:text="@string/display_no_phrase"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/no_my_phrase_bt_add"
+        style="@style/Button.Radius"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/display_add_phrase" />
+
+
+</LinearLayout>

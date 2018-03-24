@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 可以点击按钮的颜色变化以及圆角 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:endColor="#ff813b" android:startColor="#ff813b" />
+            <corners android:radius="32dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient android:endColor="@color/c2" android:startColor="@color/c2" />
+            <corners android:radius="32dp" />
+        </shape>
+    </item>
+</selector>

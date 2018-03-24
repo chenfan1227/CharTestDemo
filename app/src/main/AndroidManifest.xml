@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ccy.lnb.en">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!--连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+
+    <application
+        android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_theme"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_theme"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".activities.PlaySmallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.settingAcs.EditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.settingAcs.DefaultMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.settingAcs.BrightnessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.settingAcs.FontModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.settingAcs.BluetoothActivity"
+            android:screenOrientation="portrait" />
+        <service android:name=".BluetoothOrder.BlueService"/>
+        <!--<service android:name=".BuletoothOrder.le.BluetoothLeClass"/>-->
+        <activity
+            android:name=".activities.settingAcs.DefaultMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.pointSendAcs.MyPhraseActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

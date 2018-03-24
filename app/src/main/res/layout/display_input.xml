@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_height"
+    android:background="@color/c13">
+
+    <LinearLayout
+        android:id="@+id/display_input_linear_write"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/display_input_img_go_voice"
+            style="@style/ImageView"
+            android:layout_marginLeft="@dimen/left_right_margin_default_16"
+            android:padding="@dimen/icon_padding"
+            android:src="@mipmap/icon_go_voice" />
+
+        <EditText
+            android:id="@+id/display_input_et"
+            style="@style/EditText.Display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:hint="@string/input_tip"
+            android:textColor="@color/c5"
+            android:textColorHint="@color/c6" />
+
+        <ImageView
+            android:id="@+id/display_input_img_word_write"
+            style="@style/ImageView"
+            android:layout_marginLeft="@dimen/left_right_margin_default_16"
+            android:padding="@dimen/icon_padding"
+            android:src="@mipmap/icon_word" />
+
+        <ImageView
+            android:id="@+id/display_input_img_send"
+            style="@style/ImageView"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="@dimen/left_right_margin_default_16"
+            android:padding="@dimen/icon_padding"
+            android:src="@mipmap/icon_send" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/display_input_linear_speak"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/display_input_go_write"
+            style="@style/ImageView"
+            android:layout_marginLeft="@dimen/left_right_margin_default_16"
+            android:padding="@dimen/icon_padding"
+            android:src="@mipmap/icon_go_write" />
+
+        <Button
+            android:id="@+id/display_input_speak"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="@dimen/left_right_margin_default_16"
+            android:layout_weight="1"
+            android:background="@drawable/bg_display_speak"
+            android:gravity="center"
+            android:text="@string/display_speak"
+            android:textAllCaps="false"
+            android:textColor="@color/c5" />
+
+        <ImageView
+            android:id="@+id/display_input_word_voice"
+            style="@style/ImageView"
+            android:layout_marginLeft="@dimen/left_right_margin_default"
+            android:layout_marginRight="@dimen/left_right_margin_default_16"
+            android:padding="@dimen/icon_padding"
+            android:src="@mipmap/icon_word" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c1"
+    tools:context="com.ccy.lnb.en.activities.pointSendAcs.MyPhraseActivity">
+
+    <include
+        layout="@layout/top_bar"/>
+
+    <include
+        layout="@layout/no_my_phrase"
+        android:visibility="gone"/>
+
+    <com.ccy.lnb.en.utils.pullToRefresh.PullAbleRecyclerView
+        android:id="@+id/activity_my_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

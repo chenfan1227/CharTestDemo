@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">CarChat</string>
+
+    //刷新
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pull_up_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+
+    <string name="point_display">Display</string>
+    <string name="setting">Settings</string>
+
+    <!--设置-->
+    <string name="setting_default_mess">Default Message</string>
+    <string name="setting_bright">Brightness</string>
+    <string name="setting_model">Mode</string>
+    <string name="setting_bluetooth">Bluetooth</string>
+    <!--输入框-->
+    <string name="editActivity">Edit</string>
+
+
+    <string name="display_model">Display \n Mode</string>
+    <string name="display_sec">12 Secs</string>
+    <string name="display_loop">Loop</string>
+
+    <string name="display_no_phrase">You don\'t have any phrase</string>
+    <string name="display_no_word">Let\'s help you communicate with others</string>
+    <string name="display_add_phrase">Add phrase</string>
+
+    <string name="display_speak">Hold to Talk</string>
+
+    <!--编辑框-->
+    <string name="enter">Type something you want to display</string>
+    <string name="edit">Input your message here</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <!--蓝牙-->
+    <string name="bluetooth">Bluetooth</string>
+    <string name="automatic">Automatic brightness</string>
+    <string name="automatic_connect">Auto connect to Bluetooth</string>
+    <string name="bluetooth_current_status">Current status</string>
+    <string name="bluetooth_none">none</string>
+    <string name="bluetooth_connect">connect</string>
+    <string name="bluetooth_connected">connected</string>
+    <string name="bluetooth_disconnect">disconnect</string>
+    <string name="bluetooth_search">Search for devices </string>
+    <string name="bluetooth_connect_success">Bluetooth connection is successful</string>
+    <string name="bluetooth_connect_fail">Bluetooth connection failed</string>
+
+    <!--页面-->
+    <string name="my_screen">My Lunubao Screen</string>
+    <string name="my_phrase">My Phrase</string>
+
+    <!--提醒中改英文-->
+    <!--//蓝牙未连接-->
+    <string name="bluetooth_no_Connect">Bluetooth is not connected</string>
+    <!--//获取蓝牙许可失败，请转到设置打开定位权限-->
+    <string name="bluetooth_permission_failed">Get Bluetooth permission failed, please go to the settings to open the positioning permissions!</string>
+    <!--//您的手机系统版本过低,暂不支持路怒宝蓝牙连接!-->
+    <string name="not_support">Your phone system version is too low, do not support the road anger Bluetooth connection!</string>
+    <!--//你的设备不支持蓝牙-->
+    <string name="not_phone_support">Your phone does not support Bluetooth!</string>
+    <string name="go_connect_bluetooth">Connect Bluetooth, please</string>
+    <string name="input_tip">Typing status</string>
+    <string name="add_phrase">Add Phrase</string>
+    <string name="cancel">No</string>
+    <string name="dialog_title_delete">Delete message</string>
+    <string name="dialog_content_delete">Are you sure ？</string>
+    <string name="dialog_sure_delete">Yes</string>
+    <string name="fail_permission">Allow CarChat to access your microphone from device menu</string>
+    <string name="Fingers_canceled">Release to cancel</string>
+    <string name="Finger_canceled">Slide up to cancel</string>
+    <string name="no_installed">No voice components installed</string>
+    <string name="send_mess_null">The sent phrase can not be empty</string>
+    <!--FontModeActivity-->
+    <string name="rolling_direction">Rolling direction</string>
+    <string name="left">Right to left</string>
+    <string name="up">Down and up</string>
+    <string name="rolling_speed">Rolling speed</string>
+    <string name="fast">Fast</string>
+    <string name="mid">Mid</string>
+    <string name="slow">Slow</string>
+    <string name="add">Edit Phrase</string>
+    <string name="release_cancel">Release to cancel</string>
+    <string name="spoken">Message too short</string>
+    <string name="cannot">Text cannot be empty</string>
+</resources>

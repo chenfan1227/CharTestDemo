@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/normal_dialog_tv_title"
+        style="@style/TextView.TitleC4F2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:text="afadfa"/>
+
+    <TextView
+        android:id="@+id/normal_dialog_tv_content"
+        style="@style/TextView.SubsidiaryC6F5"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:text="fafadf"/>
+
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/normal_dialog_tv_cancel"
+            style="@style/TextView.TitleC4F2"
+            android:layout_height="match_parent"
+            android:layout_width="90dp"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/bg_cancel"
+            android:textColor="@drawable/dialog_cacael_tv_color"
+            android:focusable="false"
+            android:onClick="onClick"
+            android:text="@string/cancel"/>
+
+        <TextView
+            android:id="@+id/normal_dialog_tv_sure"
+            style="@style/TextView.TitleC4F2"
+            android:layout_height="match_parent"
+            android:layout_width="90dp"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_cancel"
+            android:textColor="@drawable/dialog_cacael_tv_color"
+            android:focusable="false"
+            android:onClick="onClick"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

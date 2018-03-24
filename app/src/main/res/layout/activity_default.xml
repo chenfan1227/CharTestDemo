@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    android:orientation="vertical"
+    tools:context="com.ccy.lnb.en.activities.settingAcs.DefaultMessageActivity">
+
+    <include layout="@layout/top_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/default_relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/c0">
+
+        <TextView
+            android:id="@+id/default_text"
+            style="@style/TextView.DefaultC5F4"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/f3"
+            android:gravity="center"
+            android:text="DefaultMessage" />
+
+        <TextView
+            android:id="@+id/default_message"
+            style="@style/TextView.DefaultC5F4"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/default_image"
+            android:layout_toRightOf="@+id/default_text"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:lines="1"
+
+            android:singleLine="true"
+            android:text="111111" />
+
+        <ImageView
+            android:id="@+id/default_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/next" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

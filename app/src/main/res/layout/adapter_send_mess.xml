@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp">
+
+
+    <TextView
+        android:id="@+id/adapter_send_mess_tv_is_again"
+        style="@style/TextView.Default.MainC5F3"
+        android:background="@drawable/send_circle_green"
+        android:text="send"
+        android:textColor="@color/c0"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/adapter_send_mess_tv_time_long"
+                style="@style/TextView.SubsidiaryC6F5"
+                android:text="12s"
+                android:textColor="@color/c2"/>
+
+            <TextView
+                android:id="@+id/adapter_send_mess_tv_send_time"
+                style="@style/TextView.SubsidiaryC6F5"
+                android:layout_toRightOf="@id/adapter_send_mess_tv_time_long"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/c6"
+                android:text="09-19 12:34"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/chat_arrow"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/adapter_send_mess_tv_info"
+                style="@style/TextView.Default.MainC5F3"
+                android:text="Cars from the media"
+                android:background="@drawable/bg_mess"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

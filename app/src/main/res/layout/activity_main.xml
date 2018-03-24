@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/activity_main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/c1"
+            android:layout_weight="1"/>
+
+
+        <RadioGroup
+            android:id="@+id/activity_main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:background="@color/c0"
+            android:orientation="horizontal">
+
+            <com.ccy.lnb.en.views.DiyRadioButton
+                android:id="@+id/activity_main_rb_display"
+                style="@style/TabRadioButton"
+                android:text="@string/point_display"
+                app:diy_drawableLeft="@drawable/rb_send_press" />
+
+            <com.ccy.lnb.en.views.DiyRadioButton
+                android:id="@+id/activity_main_rb_setting"
+                style="@style/TabRadioButton"
+                android:text="@string/setting"
+                app:diy_drawableLeft="@drawable/rb_setting_press" />
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

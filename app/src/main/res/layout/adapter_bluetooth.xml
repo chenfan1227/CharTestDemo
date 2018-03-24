@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c0"
+        android:layout_marginTop="@dimen/line_view"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/adapter_bluetooth_tv_name"
+            style="@style/TextView.Default.MainC6F3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingTop="13dp"
+            android:layout_marginLeft="@dimen/left_right_margin_default" />
+
+        <TextView
+            android:id="@+id/adapter_bluetooth_tv_is_connect"
+            style="@style/TextView.SubsidiaryC6F5"
+            android:text="@string/bluetooth_connect"
+            android:textSize="@dimen/f4"
+            android:textColor="@color/c7"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
