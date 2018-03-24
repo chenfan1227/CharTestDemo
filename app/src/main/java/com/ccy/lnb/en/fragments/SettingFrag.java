@@ -53,6 +53,7 @@ public class SettingFrag extends BaseFragment implements ItemClickListener{
     protected View loadLayout(LayoutInflater inflater) {
         View view = inflater.inflate(R.layout.frag_setting,null);
         pageBack(view);
+
         goneBack(view);
         setTopBarTitle(view,mContext.getString(R.string.setting));
         return view;
