@@ -63,6 +63,7 @@ public class SettingFrag extends BaseFragment implements ItemClickListener{
         names= new String[]{mContext.getString(R.string.setting_default_mess)
                 , mContext.getString(R.string.setting_bright)
                 , mContext.getString(R.string.setting_model)
+
                 , mContext.getString(R.string.setting_bluetooth)};
         RecyclerView.LayoutManager manager = new GridLayoutManager(mContext,2);
         mRecycler.setLayoutManager(manager);
