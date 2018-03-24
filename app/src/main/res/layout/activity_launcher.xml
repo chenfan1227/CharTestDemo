@@ -4,9 +4,23 @@
     android:layout_height="match_parent"
     android:background="#ff7900">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/img_launcher" />
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/car" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/welcome_my"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/f1" />
+    </LinearLayout>
 </RelativeLayout>

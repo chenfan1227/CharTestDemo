@@ -38,7 +38,7 @@ public class LauncherActivity extends BaseActivity {
                intentAc(MainActivity.class);
                 finish();
             }
-        }, 1000);
+        }, 3000);
 
     }
 }

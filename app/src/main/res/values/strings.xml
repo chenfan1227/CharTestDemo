@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CarChat</string>
+    <string name="app_name">车联</string>
 
     //刷新
     <string name="head">这里是HeadView</string>
@@ -56,8 +56,9 @@
     <string name="bluetooth_connect_fail">Bluetooth connection failed</string>
 
     <!--页面-->
-    <string name="my_screen">My Lunubao Screen</string>
+    <string name="my_screen">My car Screen</string>
     <string name="my_phrase">My Phrase</string>
+    <string name="welcome_my">Welcome to the world of cars.</string>
 
     <!--提醒中改英文-->
     <!--//蓝牙未连接-->
