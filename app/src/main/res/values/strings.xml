@@ -56,9 +56,10 @@
     <string name="bluetooth_connect_fail">Bluetooth connection failed</string>
 
     <!--页面-->
-    <string name="my_screen">My car Screen</string>
-    <string name="my_phrase">My Phrase</string>
+    <string name="my_screen">car Screen</string>
+    <string name="my_phrase">Phrase</string>
     <string name="welcome_my">Welcome to the world of cars.</string>
+    <string name="my_more">More</string>
 
     <!--提醒中改英文-->
     <!--//蓝牙未连接-->
@@ -93,4 +94,7 @@
     <string name="release_cancel">Release to cancel</string>
     <string name="spoken">Message too short</string>
     <string name="cannot">Text cannot be empty</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

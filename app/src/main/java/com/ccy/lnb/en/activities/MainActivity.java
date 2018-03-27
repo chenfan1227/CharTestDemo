@@ -62,6 +62,7 @@ public class MainActivity extends BaseActivity implements BluetoothBLE.onBuleSta
     protected void initViews() {
         swipeBackLayout.setEnablePullToBack(false);
         pointSendFrag = new PointSendFrag();
+
         settingFrag = new SettingFrag();
         mTabFrags.add(pointSendFrag);
         mTabFrags.add(settingFrag);
@@ -135,7 +136,7 @@ public class MainActivity extends BaseActivity implements BluetoothBLE.onBuleSta
                 ActivityCompat.requestPermissions(MainActivity.this, new String[]{Constants.SAY}, 3);
                 break;
             case 3:
-                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Constants.SAVE1, Constants.SAVE2,Constants.SAVE3}, 7);
+                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Constants.SAVE1, Constants.SAVE2, Constants.SAVE3}, 7);
                 break;
             case 7:
                 SPStrUtil.setBooleanPreference(mContext, Constants.IS_PERMISSION, false);
