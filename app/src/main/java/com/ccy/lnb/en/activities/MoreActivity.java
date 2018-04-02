@@ -66,12 +66,15 @@ public class MoreActivity extends BaseActivity {
         webView.setWebChromeClient(new WebChromeClient() {//监听网页加载
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
+                loading();
                 if (newProgress == 100) {
                     // 网页加载完成
                     webViewProgress.setVisibility(View.GONE);
+                    cancel();
                 } else {
                     // 加载中
                     webViewProgress.setProgress(newProgress);
+                    cancel();
                 }
                 super.onProgressChanged(view, newProgress);
             }
@@ -81,10 +84,11 @@ public class MoreActivity extends BaseActivity {
                 super.onReceivedTitle(view, title);
                 if (!TextUtils.isEmpty(title)) {
                     setTopBarTitle(title);
+                } else {
+                    showEmptyView();
                 }
             }
         });
-
 
     }
 
