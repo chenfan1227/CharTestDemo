@@ -205,7 +205,7 @@
         <item name="android:paddingRight">@dimen/tab_padding</item>
         <item name="android:button">@null</item>
         <item name="android:textColor">@drawable/tab_text_color</item>
-        <item name="android:textSize">@dimen/f2</item>
+        <item name="android:textSize">@dimen/f4</item>
     </style>
     <!--导航Tab样式-->
     <style name="timeRadioBt">
