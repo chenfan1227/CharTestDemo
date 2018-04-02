@@ -24,6 +24,8 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!--读取联系人权限，上传联系人需要用到此权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--拨打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 
     <application
@@ -77,7 +79,13 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.pointSendAcs.MyPhraseActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.MoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

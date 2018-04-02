@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.ccy.lnb.en"
         minSdkVersion 15
@@ -10,6 +10,11 @@ android {
         versionCode 1
         versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
     }
     buildTypes {
         release {
@@ -41,4 +46,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile files('libs/Msc.jar')
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
 }
