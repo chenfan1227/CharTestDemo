@@ -61,7 +61,6 @@ public class MoreActivity extends BaseActivity {
         return super.onKeyDown(keyCode, event);
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
     private void setWebView() {
         WebSettings webSettings = webView.getSettings();
         webView.loadUrl("http://www.baidu.com");
@@ -91,6 +90,7 @@ public class MoreActivity extends BaseActivity {
                     webViewProgress.setProgress(newProgress);
                 }
                 super.onProgressChanged(view, newProgress);
+                cancel();
             }
 
             @Override
@@ -98,8 +98,6 @@ public class MoreActivity extends BaseActivity {
                 super.onReceivedTitle(view, title);
                 if (!TextUtils.isEmpty(title)) {
                     setTopBarTitle(title);
-                } else {
-                    loading();
                 }
             }
         });
