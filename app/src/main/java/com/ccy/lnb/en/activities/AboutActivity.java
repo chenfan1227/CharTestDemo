@@ -4,41 +4,32 @@ package com.ccy.lnb.en.activities;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.SimpleAdapter;
 
 import com.ccy.lnb.en.R;
-import com.ccy.lnb.en.activities.settingAcs.BluetoothActivity;
-import com.ccy.lnb.en.activities.settingAcs.BrightnessActivity;
-import com.ccy.lnb.en.activities.settingAcs.DefaultMessageActivity;
-import com.ccy.lnb.en.activities.settingAcs.FontModeActivity;
 import com.ccy.lnb.en.adapters.SettingAdapter;
 import com.ccy.lnb.en.base.BaseActivity;
 import com.ccy.lnb.en.been.SettingBean;
 import com.ccy.lnb.en.interfaces.ItemClickListener;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
  * Created by Administrator on 2018/4/2 0002.
- */
+ **/
 
 public class AboutActivity extends BaseActivity implements ItemClickListener {
     @Bind(R.id.gridView)
     RecyclerView gridView;
-    private List<Map<String, Object>> data;
     private SettingAdapter adapter;
     private ArrayList<SettingBean> settingBeen = new ArrayList<>();//设置数据集合
-    Class<?>[] listClass = {MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class};
+    Class<?>[] listClass = {MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class, MoreActivity.class};
     //设置选项
     String[] names;
     // 图片封装成一个数组
-    int[] image = new int[]{R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about,};
+    int[] image = new int[]{R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about,};
 
     @Override
     protected void loadLayout() {
@@ -69,8 +60,8 @@ public class AboutActivity extends BaseActivity implements ItemClickListener {
                 "aaaa", "aaaa",
                 "aaaa", "aaaa",
                 "aaaa", "aaaa",
-                "aaaa"};
-        RecyclerView.LayoutManager manager = new GridLayoutManager(mContext, 2);
+                "aaaa", "aaaa"};
+        RecyclerView.LayoutManager manager = new GridLayoutManager(mContext, 3);
         gridView.setLayoutManager(manager);
         int length = listClass.length;
         SettingBean settingBean;
@@ -84,7 +75,6 @@ public class AboutActivity extends BaseActivity implements ItemClickListener {
             gridView.setAdapter(adapter);//设置adapter
         }
     }
-
 
     @Override
     public void onItemClick(View view, int position) {

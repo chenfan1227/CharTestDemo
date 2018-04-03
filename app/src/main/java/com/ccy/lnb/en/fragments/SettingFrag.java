@@ -1,6 +1,4 @@
 package com.ccy.lnb.en.fragments;
-
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -42,15 +40,6 @@ public class SettingFrag extends BaseFragment implements ItemClickListener {
     private Class<?>[] listClass = {DefaultMessageActivity.class, BrightnessActivity.class, FontModeActivity.class, BluetoothActivity.class, AboutActivity.class, MoreActivity.class};
     //图片
     private int[] imageIds = {R.mipmap.icon_default_mess, R.mipmap.icon_set_bright, R.mipmap.icon_set_model, R.mipmap.icon_set_bluetooth, R.mipmap.more, R.mipmap.about};
-
-    /**
-     * 初始化Fragment
-     */
-    public static Fragment instanceFrag() {
-        SettingFrag fragment = new SettingFrag();
-        return fragment;
-    }
-
     @Override
     protected View loadLayout(LayoutInflater inflater) {
         View view = inflater.inflate(R.layout.frag_setting, null);
