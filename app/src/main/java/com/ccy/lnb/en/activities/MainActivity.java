@@ -48,7 +48,7 @@ public class MainActivity extends BaseActivity implements BluetoothBLE.onBuleSta
     private SettingFrag settingFrag;
 
 
-    private FragTabAdapter mFragTabAdapter;//fragmentTab的适配器
+    FragTabAdapter mFragTabAdapter;//fragmentTab的适配器
 
     private ArrayList<Fragment> mTabFrags = new ArrayList<>();//tabFragment的集合
 

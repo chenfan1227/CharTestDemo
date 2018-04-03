@@ -25,7 +25,7 @@
     <!--图标按钮的默认padding-->
     <dimen name="icon_padding">3dp</dimen>
     <!--模块左右默认间距-->
-    <dimen name="left_right_margin_default">8dp</dimen>
+    <dimen name="left_right_margin_default">5dp</dimen>
     <dimen name="left_right_margin_default_16">6dp</dimen>
     <dimen name="send_height_circle">44dp</dimen>
     <dimen name="sure_radius">12dp</dimen>
