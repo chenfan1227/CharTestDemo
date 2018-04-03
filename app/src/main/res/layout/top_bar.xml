@@ -7,26 +7,28 @@
     <ImageView
         android:id="@+id/top_bar_img_back"
         style="@style/ImageView"
-        android:src="@mipmap/icon_back"
         android:layout_width="45dp"
-        android:scaleType="center"
         android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/left_right_margin_default"
         android:padding="@dimen/icon_padding"
-        android:layout_marginLeft="@dimen/left_right_margin_default"/>
+        android:scaleType="center"
+        android:src="@mipmap/icon_back" />
 
     <TextView
         android:id="@+id/top_bar_tv_title"
         style="@style/TextView.TitleC4F1"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxLines="1" />
 
     <TextView
         android:id="@+id/top_bar_tv_right"
         style="@style/TextView.TitleC4F2"
-        android:text="@string/add_phrase"
-        android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/left_right_margin_default"
-        android:visibility="gone"
-        android:padding="@dimen/icon_padding"/>
+        android:padding="@dimen/icon_padding"
+        android:text="@string/add_phrase"
+        android:visibility="gone" />
 
 </RelativeLayout>

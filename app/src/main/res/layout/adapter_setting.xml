@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:layout_marginRight="@dimen/line_view"
-    android:layout_marginTop="@dimen/line_view"
+
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,6 +12,8 @@
         android:background="@drawable/bg_setting_item"
         android:gravity="center"
         android:focusable="false"
+        android:layout_marginRight="@dimen/line_view"
+        android:layout_marginTop="@dimen/line_view"
         android:onClick="onClick"
         android:orientation="vertical">
 
