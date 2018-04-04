@@ -77,6 +77,8 @@ public class YuYinDialog extends Dialog {
             imageVoice.setImageResource(R.mipmap.speak_three);
         } else if (voice > 15 && voice <= 20) {
             imageVoice.setImageResource(R.mipmap.speak_four);
+        } else if (voice > 20 && voice <= 25) {
+            imageVoice.setImageResource(R.mipmap.speak_five);
         } else {
             imageVoice.setImageResource(R.mipmap.speak_five);
         }

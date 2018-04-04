@@ -16,6 +16,18 @@ android {
             }
         }
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('../lbkey.jks')
+            storePassword '123456'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
