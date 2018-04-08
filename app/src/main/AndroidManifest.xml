@@ -52,7 +52,7 @@
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeMain"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".activities.PlaySmallActivity"
             android:screenOrientation="portrait" />
