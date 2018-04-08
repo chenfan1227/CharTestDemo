@@ -11,7 +11,7 @@ import com.ccy.lnb.en.R;
 
 public class NormalDialog extends Dialog {
 
-    Context mcContext;
+    Context mContext;
     OnSureClick on;
     private TextView cancel;
     private TextView sure;
@@ -20,7 +20,7 @@ public class NormalDialog extends Dialog {
 
     public NormalDialog(Context context, int theme, OnSureClick on) {
         super(context, theme);
-        mcContext = context;
+        mContext = context;
         this.on = on;
     }
 
@@ -30,7 +30,7 @@ public class NormalDialog extends Dialog {
 
     public NormalDialog(Context context) {
         super(context);
-        mcContext = context;
+        mContext = context;
     }
 
     @Override
