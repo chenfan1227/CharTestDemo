@@ -14,7 +14,7 @@
         <ImageView
             android:id="@+id/display_input_img_go_voice"
             style="@style/ImageView"
-            android:layout_marginLeft="@dimen/left_right_margin_default_16"
+            android:layout_marginLeft="@dimen/left_margin"
             android:padding="@dimen/icon_padding"
             android:src="@mipmap/icon_go_voice" />
 
@@ -23,8 +23,6 @@
             style="@style/EditText.Display"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginBottom="4dp"
-            android:layout_marginLeft="16dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:hint="@string/input_tip"

@@ -243,7 +243,7 @@ public class PointSendFrag extends BaseFragment implements ItemClickListener, Di
             DiyToast.showShort(mContext, mContext.getString(R.string.cannot));
             return;
         }
-        if (Constants.IS_CONNECT_BLUETOOTH) {
+        if (!Constants.IS_CONNECT_BLUETOOTH) {
             DisplayBean displayBean = new DisplayBean();
             //加入数据库
             GreenDaoUtil.insertData(mDisplayMessDao, modelA2B(displayBean, mess));
@@ -282,7 +282,9 @@ public class PointSendFrag extends BaseFragment implements ItemClickListener, Di
         } else {
             return "Loop";
         }
+
     }
+
 
     /**
      * 将DisplayBean转换为DisplayMess
@@ -317,6 +319,7 @@ public class PointSendFrag extends BaseFragment implements ItemClickListener, Di
     @Override
     public void onItemClick(View view, int position) {
         InputMethodManager imm = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
+        assert imm != null;
         imm.hideSoftInputFromWindow(mEtMess.getWindowToken(), 0);
     }
 
@@ -336,7 +339,7 @@ public class PointSendFrag extends BaseFragment implements ItemClickListener, Di
     //重新发送
     @Override
     public void sendAgainClick(View view, int position) {
-        if (Constants.IS_CONNECT_BLUETOOTH) {
+        if (!Constants.IS_CONNECT_BLUETOOTH) {
             //从数据库里删除
             daoDelItem(position);
             sendMess(mAdapter.getDataList().get(position).getMessage());
@@ -414,7 +417,7 @@ public class PointSendFrag extends BaseFragment implements ItemClickListener, Di
                     }
                 } else {
                     if (event.getAction() == MotionEvent.ACTION_UP)
-                    DiyToast.showShort(mContext, getResources().getString(R.string.fail_permission));
+                        DiyToast.showShort(mContext, getResources().getString(R.string.fail_permission));
                 }
 
                 return false;
