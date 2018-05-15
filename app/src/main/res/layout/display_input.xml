@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/tab_height"
-    android:background="@color/c13">
+    android:orientation="vertical"
+    android:background="@color/c0">
 
     <LinearLayout
         android:id="@+id/display_input_linear_write"
@@ -27,19 +28,20 @@
             android:layout_weight="1"
             android:hint="@string/input_tip"
             android:textColor="@color/c5"
+            android:textCursorDrawable="@drawable/bg_edit_text"
             android:textColorHint="@color/c6" />
 
         <ImageView
             android:id="@+id/display_input_img_word_write"
             style="@style/ImageView"
-            android:layout_marginLeft="@dimen/left_right_margin_default_16"
+            android:layout_marginLeft="@dimen/left_right_"
             android:padding="@dimen/icon_padding"
             android:src="@mipmap/icon_word" />
 
         <ImageView
             android:id="@+id/display_input_img_send"
             style="@style/ImageView"
-            android:layout_marginLeft="12dp"
+            android:layout_marginLeft="9dp"
             android:layout_marginRight="@dimen/left_right_margin_default_16"
             android:padding="@dimen/icon_padding"
             android:src="@mipmap/icon_send" />
@@ -87,5 +89,11 @@
 
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c5" />
 
 </RelativeLayout>
