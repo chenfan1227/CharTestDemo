@@ -32,11 +32,11 @@ public class MoreFrag extends BaseFragment {
 
     @Override
     protected void initViews(View view) {
+
     }
 
     @Override
     protected void setAllClick() {
-
     }
 
     @Override
