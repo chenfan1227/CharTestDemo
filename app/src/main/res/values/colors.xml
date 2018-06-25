@@ -8,7 +8,9 @@
 
     <color name="color_gray">#666666</color>
     <color name="color_white">#ffffff</color>
-
+    <color name="lighter_gray">#ddd</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="default_text_color">#505050</color>
     <color name="c0">#ffffff</color>
     <color name="c1">#ebebeb</color>
     <color name="c2">#fd7e21</color>

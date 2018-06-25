@@ -1,5 +1,6 @@
 package com.ccy.lnb.en.adapters.pointSendAds;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -49,7 +50,7 @@ public class MyPhraseAdapter  extends BaseRecyclerAdapter<MyPhraseAdapter.ItemVi
     }
 
     @Override
-    public void onBindViewHolder(ItemViewHolder holder, final int position) {
+    public void onBindViewHolder(ItemViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         final MyPhrase myPhrase = mDataList.get(position);
         holder.mTvMess.setText(myPhrase.getMyMess());
 

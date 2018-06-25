@@ -1,6 +1,7 @@
 package com.ccy.lnb.en.activities;
 
 
+import android.os.Build;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -29,7 +30,7 @@ public class AboutActivity extends BaseActivity implements ItemClickListener {
     //设置选项
     String[] names;
     // 图片封装成一个数组
-    int[] image = new int[]{R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about,};
+    final int[] image = new int[]{R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about, R.mipmap.about,};
 
     @Override
     protected void loadLayout() {

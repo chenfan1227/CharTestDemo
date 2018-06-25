@@ -23,4 +23,6 @@
             android:textColor="@color/c3"
             android:textSize="@dimen/f1" />
     </LinearLayout>
+
+
 </RelativeLayout>

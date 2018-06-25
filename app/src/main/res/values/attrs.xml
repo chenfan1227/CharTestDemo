@@ -6,4 +6,139 @@
         <attr name="android:divider" />
     </declare-styleable>
 
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="FlowLayout">
+        <attr name="horizontal_spacing" format="dimension"/>
+        <attr name="vertical_spacing" format="dimension"/>
+    </declare-styleable>-->
+
+    <declare-styleable name="FlowLayout">
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean" />
+        <attr name="max_select" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomIndicator">
+        <attr name="count" format="integer" />
+        <attr name="width" format="dimension" />
+        <attr name="margin" format="dimension" />
+        <attr name="normal_icon" format="reference" />
+        <attr name="selected_icon" format="reference" />
+        <attr name="height1" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TextEditItemView">
+        <attr name="item_name" format="string" />
+        <attr name="edit_text" format="string" />
+        <attr name="edit_hint_text" format="string" />
+        <attr name="select_text" format="string" />
+        <attr name="select_hint_text" format="string" />
+        <attr name="isMarker" format="boolean" />
+        <attr name="clickable" format="boolean" />
+        <attr name="tail_icon_res" format="reference|color" />
+        <attr name="item_icon" format="reference|color" />
+        <attr name="select_text_color" format="reference|color" />
+        <attr name="item_name_text_color" format="reference|color" />
+        <attr name="maxLength" format="integer" />
+        <attr name="action_type">
+            <flag name="edit" value="0" />
+            <flag name="select" value="1" />
+        </attr>
+        <attr name="input_type">
+            <flag name="text" value="0" />
+            <flag name="number" value="1" />
+            <flag name="password" value="2" />
+            <flag name="phone" value="3" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="TabRadioButtonStyleable">
+        <attr name="radio_icon" format="reference|color" />
+        <attr name="radio_checked_icon" format="reference|color" />
+        <attr name="radio_text_color" format="reference|color" />
+        <attr name="radio_checked_text_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+
+        <attr name="ci_orientation" format="enum">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0" />
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="StarsBar">
+
+        <!-- 星星间距 -->
+        <attr name="starDistance" format="dimension" />
+        <!-- 星星大小 -->
+        <attr name="starSize" format="dimension" />
+        <!-- 星星个数 -->
+        <attr name="starCount" format="integer" />
+        <!-- 评分分数 -->
+        <attr name="rating" format="integer" />
+        <!-- 星星空图 -->
+        <attr name="starEmpty" format="reference" />
+        <!-- 星星满图 -->
+        <attr name="starFill" format="reference" />
+        <!-- 是否可以拖动 -->
+        <attr name="canDrag" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <attr name="label_distance" format="dimension" />
+        <attr name="label_height" format="dimension" />
+        <attr name="label_strokeWidth" format="dimension" />
+        <attr name="label_backgroundColor" format="color" />
+        <attr name="label_strokeColor" format="color" />
+        <attr name="label_text" format="string" />
+        <attr name="label_textSize" format="dimension" />
+        <attr name="label_textStyle" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="BOLD" value="1" />
+            <enum name="ITALIC" value="2" />
+            <enum name="BOLD_ITALIC" value="3" />
+        </attr>
+        <attr name="label_textColor" format="color" />
+        <attr name="label_visual" format="boolean" />
+        <attr name="label_orientation" format="enum">
+            <enum name="LEFT_TOP" value="1" />
+            <enum name="RIGHT_TOP" value="2" />
+            <enum name="LEFT_BOTTOM" value="3" />
+            <enum name="RIGHT_BOTTOM" value="4" />
+        </attr>
+    </declare-styleable>
 </resources>
