@@ -1,0 +1,235 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/c0</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">@color/c12</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">@color/c12</item>
+    </style>
+
+    <style name="AppThemeStart" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/c2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">@color/c12</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">@color/c12</item>
+    </style>
+
+    <style name="AppThemeMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/c0</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">@color/c12</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">@color/c12</item>
+    </style>
+
+
+    <!--白色透明的加载dialog-->
+    <style name="dialog_loading" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+    </style>
+
+    <style name="NormalDialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_normal</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:width">280dp</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!--白色透明的dialog-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+    </style>
+
+    <!--主页底下tab的切换button-->
+    <declare-styleable name="DiyRadioButton">
+        <!-- 设置top图片的宽度 -->
+        <attr name="diy_drawableTopWith" format="dimension" />
+        <!-- 设置top图片的高度 -->
+        <attr name="diy_drawableTopHeight" format="dimension" />
+        <attr name="diy_drawableBottomWith" format="dimension" />
+        <attr name="diy_drawableBottomHeight" format="dimension" />
+        <attr name="diy_drawableRightWith" format="dimension" />
+        <attr name="diy_drawableRightHeight" format="dimension" />
+        <attr name="diy_drawableLeftWith" format="dimension" />
+        <attr name="diy_drawableLeftHeight" format="dimension" />
+        <!-- 设置top的图片资源 -->
+        <attr name="diy_drawableTop" format="reference" />
+        <attr name="diy_drawableBottom" format="reference" />
+        <attr name="diy_drawableRight" format="reference" />
+        <attr name="diy_drawableLeft" format="reference" />
+    </declare-styleable>
+
+    <!--基类view-->
+    <style name="View">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--基类TextView-->
+    <style name="TextView" parent="View"/>
+
+    <style name="RadioButton" parent="View"/>
+
+    <style name="Button" parent="View">
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="EditText" parent="View">
+    </style>
+
+    <!--基类ImageView-->
+    <style name="ImageView" parent="View"/>
+
+    <!--标题字体-->
+    <style name="TextView.TitleC4F1" parent="TextView">
+        <item name="android:textColor">@color/c4</item>
+        <item name="android:textSize">@dimen/f1</item>
+    </style>
+
+    <!--标题字体-->
+    <style name="TextView.TitleC4F2" parent="TextView">
+        <item name="android:textColor">@color/c4</item>
+        <item name="android:textSize">@dimen/f2</item>
+    </style>
+
+    <!--默认字体（主要文字颜色和内容颜色）-->
+    <style name="TextView.DefaultC5F4" parent="TextView">
+        <item name="android:textColor">@color/c5</item>
+        <item name="android:textSize">@dimen/f4</item>
+    </style>
+
+    <!--默认主页字体（主要文字颜色和点发，设置内容颜色）-->
+    <style name="TextView.Default.MainC5F3" parent="TextView">
+        <item name="android:textColor">@color/c5</item>
+        <item name="android:textSize">@dimen/f3</item>
+    </style>
+
+    <!--默认主页辅助字体（辅助文字颜色和点发，设置内容颜色）-->
+    <style name="TextView.Default.MainC6F3" parent="TextView">
+        <item name="android:textColor">@color/c5</item>
+        <item name="android:textSize">@dimen/f3</item>
+    </style>
+
+    <!--辅助字体-->
+    <style name="TextView.SubsidiaryC6F5" parent="TextView">
+        <item name="android:textColor">@color/c6</item>
+        <item name="android:textSize">@dimen/f5</item>
+    </style>
+
+    <!--首页时间字体-->
+    <style name="TextView.TimeC6F4" parent="TextView">
+        <item name="android:textColor">@color/c6</item>
+        <item name="android:textSize">@dimen/f4</item>
+    </style>
+
+    <style name="Button.Radius" parent="Button">
+        <item name="android:background">@drawable/bg_time_one</item>
+        <item name="android:textColor">@color/c0</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="EditText.Display" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/c2</item>
+        <item name="colorControlActivated">@color/c2</item>
+    </style>
+
+    <style name="RadioButton.Display" parent="RadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_time_press</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/tab_time_color</item>
+        <item name="android:textSize">@dimen/f3</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--导航Tab样式-->
+    <style name="TabRadioButton">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/tab_padding</item>
+        <item name="android:paddingRight">@dimen/tab_padding</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/tab_text_color</item>
+        <item name="android:textSize">@dimen/f4</item>
+    </style>
+    <!--导航Tab样式-->
+    <style name="timeRadioBt">
+        <item name="android:layout_width">53dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/bg_time_press</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="typeface_radioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/shape_selector_typeface</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/font_text_color</item>
+        <item name="android:textSize">@dimen/f3</item>
+    </style>
+
+</resources>
