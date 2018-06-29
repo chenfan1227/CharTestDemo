@@ -34,6 +34,7 @@
     <string name="display_no_phrase">You don\'t have any phrase</string>
     <string name="display_no_word">Let\'s help you communicate with others</string>
     <string name="display_add_phrase">Add phrase</string>
+    <string name="display_no_data">No Data</string>
 
     <string name="display_speak">Hold to Talk</string>
 
