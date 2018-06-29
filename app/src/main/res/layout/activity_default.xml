@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/c1"
     android:orientation="vertical"
-    tools:context="com.ccy.lnb.en.activities.settingAcs.DefaultMessageActivity">
+    tools:context="com.make.char_im.chenfan.activities.settingAcs.DefaultMessageActivity">
 
     <include layout="@layout/top_bar" />
 

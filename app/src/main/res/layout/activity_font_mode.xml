@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/c1"
     android:orientation="vertical"
-    tools:context="com.ccy.lnb.en.activities.settingAcs.FontModeActivity">
+    tools:context="com.make.char_im.chenfan.activities.settingAcs.FontModeActivity">
 
     <include layout="@layout/top_bar" />
 

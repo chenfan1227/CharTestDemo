@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/c1"
-    tools:context="com.ccy.lnb.en.activities.pointSendAcs.MyPhraseActivity">
+    tools:context="com.make.char_im.chenfan.activities.pointSendAcs.MyPhraseActivity">
 
     <include
         layout="@layout/top_bar"/>
@@ -14,7 +14,7 @@
         layout="@layout/no_my_phrase"
         android:visibility="gone"/>
 
-    <com.ccy.lnb.en.utils.pullToRefresh.PullAbleRecyclerView
+    <com.make.char_im.chenfan.utils.pullToRefresh.PullAbleRecyclerView
         android:id="@+id/activity_my_phrase"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

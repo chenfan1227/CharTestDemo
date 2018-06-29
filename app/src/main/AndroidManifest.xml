@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ccy.lnb.en">
+    package="com.make.char_im.chenfan">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -51,7 +51,7 @@
         <activity
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeMain"
+            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".activities.PlaySmallActivity"

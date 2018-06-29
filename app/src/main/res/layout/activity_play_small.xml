@@ -4,17 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.ccy.lnb.en.utils.pullToRefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.make.char_im.chenfan.utils.pullToRefresh.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/pull_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.ccy.lnb.en.utils.pullToRefresh.PullAbleRecyclerView
+        <com.make.char_im.chenfan.utils.pullToRefresh.PullAbleRecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    </com.ccy.lnb.en.utils.pullToRefresh.PullToRefreshLayout>
+    </com.make.char_im.chenfan.utils.pullToRefresh.PullToRefreshLayout>
 
 
 </LinearLayout>
