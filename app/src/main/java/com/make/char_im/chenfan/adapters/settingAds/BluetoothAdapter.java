@@ -18,10 +18,10 @@ import butterknife.ButterKnife;
 
 /**
  * 蓝牙设备列表adapter
- * Created by MJ on 2017/4/14.
+ * Created by chen on 2017/4/14.
  */
 
-public class BluetoothAdapter extends BaseRecyclerAdapter<BluetoothAdapter.ItemViewHolder,iBeaconClass.iBeacon>{
+public class BluetoothAdapter extends BaseRecyclerAdapter<BluetoothAdapter.ItemViewHolder, iBeaconClass.iBeacon> {
 
     private int currentPosition = 0;
 
@@ -38,7 +38,7 @@ public class BluetoothAdapter extends BaseRecyclerAdapter<BluetoothAdapter.ItemV
     /**
      * 添加蓝牙设备入列表，重复的去掉
      */
-    public void addItemOnly(iBeaconClass.iBeacon iBeacon){
+    public void addItemOnly(iBeaconClass.iBeacon iBeacon) {
         if (iBeacon == null)
             return;
         for (int i = 0; i < mDataList.size(); i++) {
@@ -56,12 +56,12 @@ public class BluetoothAdapter extends BaseRecyclerAdapter<BluetoothAdapter.ItemV
     /**
      * 改变连接状态
      */
-    public void changeConnectStatus(int position,boolean isConnect){
+    public void changeConnectStatus(int position, boolean isConnect) {
         int length = mDataList.size();
         for (int i = 0; i < length; i++) {
-            if (i==position){
+            if (i == position) {
                 mDataList.get(i).isConnect = isConnect;
-            }else {
+            } else {
                 mDataList.get(i).isConnect = false;
             }
         }
@@ -70,36 +70,36 @@ public class BluetoothAdapter extends BaseRecyclerAdapter<BluetoothAdapter.ItemV
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new BluetoothAdapter.ItemViewHolder(mLayoutInflater.inflate(R.layout.adapter_bluetooth,parent,false) );
+        return new BluetoothAdapter.ItemViewHolder(mLayoutInflater.inflate(R.layout.adapter_bluetooth, parent, false));
     }
 
     @Override
     public void onBindViewHolder(final ItemViewHolder holder, final int position) {
         final iBeaconClass.iBeacon bluetoothListBean = mDataList.get(position);
         holder.mTvName.setText(bluetoothListBean.name);
-        if (!bluetoothListBean.isConnect){
+        if (!bluetoothListBean.isConnect) {
             holder.mTvIsConnect.setText(mContext.getString(R.string.bluetooth_connect));
             holder.mTvIsConnect.setTextColor(mContext.getResources().getColor(R.color.c7));
-        }else {
+        } else {
             holder.mTvIsConnect.setText(mContext.getString(R.string.bluetooth_disconnect));
             holder.mTvIsConnect.setTextColor(mContext.getResources().getColor(R.color.c2));
         }
-       holder.mTvIsConnect.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               currentPosition = position;
-               if (holder.mTvIsConnect.getText().toString().equals(mContext.getString(R.string.bluetooth_connect))){
-                   bluetoothConnectListener.connectBluetoothOnClick((TextView) view,position);
-               }else {
-                   bluetoothConnectListener.disconnectBluetoothOnClick((TextView) view,position);
-               }
-           }
-       });
+        holder.mTvIsConnect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                currentPosition = position;
+                if (holder.mTvIsConnect.getText().toString().equals(mContext.getString(R.string.bluetooth_connect))) {
+                    bluetoothConnectListener.connectBluetoothOnClick((TextView) view, position);
+                } else {
+                    bluetoothConnectListener.disconnectBluetoothOnClick((TextView) view, position);
+                }
+            }
+        });
 
 
     }
 
-    public class ItemViewHolder extends RecyclerView.ViewHolder{
+    public class ItemViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.adapter_bluetooth_tv_name)
         TextView mTvName;
         @BindView(R.id.adapter_bluetooth_tv_is_connect)
@@ -107,7 +107,7 @@ public class BluetoothAdapter extends BaseRecyclerAdapter<BluetoothAdapter.ItemV
 
         public ItemViewHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
         }
     }
 

@@ -18,7 +18,9 @@ import butterknife.BindView;
 
 
 /**
- * Created by meng on 16/12/15.
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能： 列表
+ * 作者：chenfan
  */
 
 public class PlaySmallActivity extends BaseActivity implements PullToRefreshLayout.OnPullListener {

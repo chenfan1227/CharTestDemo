@@ -20,7 +20,9 @@ import butterknife.ButterKnife;
 import static android.view.KeyEvent.KEYCODE_BACK;
 
 /**
- * by:chen
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能： 更多
+ * 作者：chenfan
  */
 
 public class MoreActivity extends BaseActivity {

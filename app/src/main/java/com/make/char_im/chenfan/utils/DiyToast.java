@@ -12,7 +12,7 @@ import com.make.char_im.chenfan.R;
 
 /**
  * 自定义悬浮窗
- * Created by meng on 16/12/14.
+ * Created by chen on 16/12/14.
  */
 
 public class DiyToast {

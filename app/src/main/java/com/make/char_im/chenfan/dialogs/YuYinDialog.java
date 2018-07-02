@@ -14,7 +14,7 @@ import com.make.char_im.chenfan.R;
 
 /**
  * 语音dialog
- * Created by Administrator on 2016/4/8.
+ * Created by chen on 2016/4/8.
  */
 public class YuYinDialog extends Dialog {
 

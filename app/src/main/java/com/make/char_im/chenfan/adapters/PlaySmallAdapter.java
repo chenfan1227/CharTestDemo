@@ -13,10 +13,10 @@ import com.make.char_im.chenfan.base.BaseRecyclerAdapter;
 import java.util.List;
 
 /**
- * Created by meng on 16/12/15.
+ * Created by chen on 16/12/15.
  */
 
-public class PlaySmallAdapter extends BaseRecyclerAdapter<PlaySmallAdapter.PlaySmallItemViewHolder,String> {
+public class PlaySmallAdapter extends BaseRecyclerAdapter<PlaySmallAdapter.PlaySmallItemViewHolder, String> {
 
 
     private LayoutInflater mLayoutInflater;
@@ -25,12 +25,12 @@ public class PlaySmallAdapter extends BaseRecyclerAdapter<PlaySmallAdapter.PlayS
     public PlaySmallAdapter(Context context, List<String> data) {
         super(context, data);
         mContext = context;
-        mLayoutInflater= LayoutInflater.from(mContext);
+        mLayoutInflater = LayoutInflater.from(mContext);
     }
 
     @Override
     public PlaySmallItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new PlaySmallItemViewHolder(mLayoutInflater.inflate(R.layout.adapter_paly_small,parent,false) );
+        return new PlaySmallItemViewHolder(mLayoutInflater.inflate(R.layout.adapter_paly_small, parent, false));
     }
 
     @Override
@@ -38,7 +38,7 @@ public class PlaySmallAdapter extends BaseRecyclerAdapter<PlaySmallAdapter.PlayS
 
     }
 
-    public class PlaySmallItemViewHolder extends RecyclerView.ViewHolder{
+    public class PlaySmallItemViewHolder extends RecyclerView.ViewHolder {
         public PlaySmallItemViewHolder(View itemView) {
             super(itemView);
         }

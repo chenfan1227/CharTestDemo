@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 
 /**
  * 我的短语适配器
- * Created by MJ on 2017/4/13.
+ * Created by Chen on 2017/4/13.
  */
 
 public class MyPhraseAdapter  extends BaseRecyclerAdapter<MyPhraseAdapter.ItemViewHolder,MyPhrase>implements ItemSlideHelper.Callback {

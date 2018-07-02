@@ -2,7 +2,7 @@ package com.make.char_im.chenfan.been;
 
 /**
  * 我的短语实体类
- * Created by MJ on 2017/4/13.
+ * Created by chen on 2017/4/13.
  */
 
 public class MyPhraseBean {

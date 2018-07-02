@@ -60,10 +60,10 @@ import butterknife.BindView;
 
 
 /**
- * 点发的fragment
- * Created by MJ on 2017/4/10.
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能： 点发的fragment
+ * 作者：chenfan
  */
-
 public class PointSendFrag extends BaseFragment implements ItemClickListener, DisplayAdapter.ItemOnClickInterface {
 
     @BindView(R.id.frag_display_rg)

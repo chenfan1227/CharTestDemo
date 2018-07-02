@@ -2,7 +2,7 @@ package com.make.char_im.chenfan.utils;
 
 /**
  * 常量
- * Created by Meng on 2017/4/10.
+ * Created by chen on 2017/4/10.
  */
 
 public class Constants {

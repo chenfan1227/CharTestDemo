@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 /**
  * SharedPreferences的key值
- * Created by MJ on 2017/4/14.
+ * Created by chen on 2017/4/14.
  */
 
 public class SPStrUtil {

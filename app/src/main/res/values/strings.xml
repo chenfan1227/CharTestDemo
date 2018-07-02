@@ -15,8 +15,8 @@
     <string name="load_fail">加载失败</string>
 
 
-    <string name="point_display">Display</string>
-    <string name="setting">Settings</string>
+    <string name="point_display">发送</string>
+    <string name="setting">设置</string>
 
     <!--设置-->
     <string name="setting_default_mess">Default Message</string>

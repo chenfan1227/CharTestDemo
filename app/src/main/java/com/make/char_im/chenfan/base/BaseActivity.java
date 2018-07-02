@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
 
 /**
  * 自定义基类AppCompatActivity
- * Created by meng on 2015/12/7.
+ * Created by chen on 2015/12/7.
  */
 public abstract class BaseActivity extends SwipeBackActivity implements View.OnClickListener {
 

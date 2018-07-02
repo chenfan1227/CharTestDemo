@@ -2,7 +2,7 @@ package com.make.char_im.chenfan.been;
 
 /**
  * 设置实体类
- * Created by MJ on 2017/4/12.
+ * Created by chen on 2017/4/12.
  */
 
 public class SettingBean {

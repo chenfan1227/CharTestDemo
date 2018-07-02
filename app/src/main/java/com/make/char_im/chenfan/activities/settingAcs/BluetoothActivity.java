@@ -33,7 +33,7 @@ import butterknife.BindView;
 
 /**
  * 蓝牙连接界面
- * Created by MJ on 2017/4/14.
+ * Created by chen on 2017/4/14.
  */
 
 public class BluetoothActivity extends BaseActivity implements BluetoothBLE.onBuleStatus, BluetoothConnectListener {

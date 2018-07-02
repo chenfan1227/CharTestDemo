@@ -2,7 +2,7 @@ package com.make.char_im.chenfan.been;
 
 /**
  * 点发显示实体类
- * Created by MJ on 2017/4/13.
+ * Created by chen on 2017/4/13.
  */
 
 public class DisplayBean {

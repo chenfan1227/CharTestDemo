@@ -17,11 +17,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 首页点发显示adapter
- * Created by MJ on 2017/4/13.
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能： 首页点发显示adapter
+ * 作者：chenfan
  */
 
-public class DisplayAdapter extends BaseRecyclerAdapter<DisplayAdapter.ItemViewHolder,DisplayBean>{
+public class DisplayAdapter extends BaseRecyclerAdapter<DisplayAdapter.ItemViewHolder, DisplayBean> {
 
     private ItemClickListener itemClickListener;//点击item的监听
     private ItemOnClickInterface itemOnClickInterface;
@@ -40,7 +41,7 @@ public class DisplayAdapter extends BaseRecyclerAdapter<DisplayAdapter.ItemViewH
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new DisplayAdapter.ItemViewHolder(mLayoutInflater.inflate(R.layout.adapter_send_mess,parent,false) );
+        return new DisplayAdapter.ItemViewHolder(mLayoutInflater.inflate(R.layout.adapter_send_mess, parent, false));
     }
 
     @Override
@@ -52,28 +53,28 @@ public class DisplayAdapter extends BaseRecyclerAdapter<DisplayAdapter.ItemViewH
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                itemClickListener.onItemClick(view,position);
+                itemClickListener.onItemClick(view, position);
             }
         });
 
         holder.mTvAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                itemOnClickInterface.sendAgainClick(view,position);
+                itemOnClickInterface.sendAgainClick(view, position);
             }
         });
 
         holder.mTvInfo.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                itemOnClickInterface.messLongClick(view,position);
+                itemOnClickInterface.messLongClick(view, position);
                 return false;
             }
         });
 
     }
 
-    public class ItemViewHolder extends RecyclerView.ViewHolder{
+    public class ItemViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.adapter_send_mess_tv_time_long)
         TextView mTvTimeLong;
         @BindView(R.id.adapter_send_mess_tv_send_time)
@@ -82,14 +83,16 @@ public class DisplayAdapter extends BaseRecyclerAdapter<DisplayAdapter.ItemViewH
         TextView mTvInfo;
         @BindView(R.id.adapter_send_mess_tv_is_again)
         TextView mTvAgain;
+
         public ItemViewHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
         }
     }
 
-    public interface ItemOnClickInterface{
-        void sendAgainClick(View view,int position);
-        void messLongClick(View view,int position);
+    public interface ItemOnClickInterface {
+        void sendAgainClick(View view, int position);
+
+        void messLongClick(View view, int position);
     }
 }

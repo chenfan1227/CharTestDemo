@@ -20,9 +20,11 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 设置列表的适配器
- * Created by Mj on 2017/4/12.
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能： 设置列表的适配器
+ * 作者：chenfan
  */
+
 
 public class SettingAdapter extends BaseRecyclerAdapter<SettingAdapter.ItemViewHolder,SettingBean>{
 

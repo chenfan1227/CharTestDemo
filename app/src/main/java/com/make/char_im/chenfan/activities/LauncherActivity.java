@@ -8,8 +8,9 @@ import com.make.char_im.chenfan.R;
 import com.make.char_im.chenfan.base.BaseActivity;
 
 /**
- * 启动页
- * Created by MJie on 2017/4/20.
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能： 启动页
+ * 作者：chenfan
  */
 
 public class LauncherActivity extends BaseActivity {
@@ -35,7 +36,7 @@ public class LauncherActivity extends BaseActivity {
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
             @Override
             public void run() {
-               intentAc(MainActivity.class);
+                intentAc(MainActivity.class);
                 finish();
             }
         }, 3000);

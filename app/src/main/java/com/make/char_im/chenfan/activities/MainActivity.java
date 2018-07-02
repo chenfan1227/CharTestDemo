@@ -36,8 +36,9 @@ import butterknife.ButterKnife;
 
 
 /**
- * 主页mainActivity
- * Created by MJ on 2017/4/10.
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能：主页activity
+ * 作者：chenfan
  */
 public class MainActivity extends BaseActivity implements BluetoothBLE.onBuleStatus {
     @BindView(R.id.activity_main_frame)

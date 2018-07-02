@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
 
 /**
  * fragmentDialog的基类
- * Created by meng on 16/12/19.
+ * Created by chen on 16/12/19.
  */
 
 public abstract class BaseFragDialog extends DialogFragment {

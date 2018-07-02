@@ -13,7 +13,10 @@ import com.make.char_im.chenfan.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
+/**
+ * chen
+ * 更多
+ */
 public class MoreFrag extends BaseFragment {
 
     @BindView(R.id.web_view_progress)

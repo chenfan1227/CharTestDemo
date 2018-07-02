@@ -6,7 +6,11 @@ import android.view.View;
 import com.make.char_im.chenfan.R;
 import com.make.char_im.chenfan.base.BaseFragment;
 
-
+/**
+ * 作者：Administrator on 2018/7/2 0002 10:22
+ * 功能： 购物车
+ * 作者：chenfan
+ */
 public class ShoppingFragment extends BaseFragment {
 
     @Override

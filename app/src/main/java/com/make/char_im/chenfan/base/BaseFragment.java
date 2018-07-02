@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
 
 /**
  * 自定义基类Fragment
- * Created by meng on 2015/12/8.
+ * Created by chen on 2015/12/8.
  */
 public abstract class BaseFragment extends Fragment implements View.OnClickListener{
     protected final String TAG = getClass().getSimpleName();

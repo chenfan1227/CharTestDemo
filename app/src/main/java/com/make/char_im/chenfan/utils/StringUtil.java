@@ -9,7 +9,7 @@ import static android.content.Context.TELEPHONY_SERVICE;
 
 /**
  * 字符串处理及得到的工具类
- * Created by Meng on 2016/12/5.
+ * Created by chen on 2016/12/5.
  */
 public class StringUtil {
 

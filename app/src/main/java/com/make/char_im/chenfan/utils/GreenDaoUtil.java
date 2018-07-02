@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  * 数据库增删改查工具类
- * Created by MJ on 2017/4/13.
+ * Created by chen on 2017/4/13.
  */
 
 public class GreenDaoUtil {

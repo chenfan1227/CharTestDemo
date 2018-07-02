@@ -12,6 +12,7 @@ import java.util.List;
 /**
  * tab -adapter-fragment
  */
+
 public class FragTabAdapter implements RadioGroup.OnCheckedChangeListener {
     private List<Fragment> fragments; // 一个tab页面对应一个Fragment
     private RadioGroup rgs; // 用于切换tab
