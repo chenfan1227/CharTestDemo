@@ -23,6 +23,7 @@ import com.make.char_im.chenfan.greenDao.MyPhraseDao;
  */
 public class DaoSession extends AbstractDaoSession {
 
+
     private final DaoConfig displayMessDaoConfig;
     private final DaoConfig myPhraseDaoConfig;
 
